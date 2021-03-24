@@ -1,0 +1,61 @@
+@import './variables.scss';
+@import './animations.scss';
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .landing {
+    text-align: center;
+
+    h1 {
+      color: white;
+      font-size: 3.6rem;
+      animation-name: moveInLeft;
+      animation-duration: 2s;
+
+      .name {
+        color: $primaryColor;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      animation-name: moveInRight;
+      animation-duration: 2s;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 0;
+      animation-name: opacity;
+      animation-duration: 3s;
+
+      .icon-box {
+        margin-right: 1rem;
+
+        .icon {
+          font-size: 2rem;
+          color: #a4acc4;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .github:hover {
+          color: rgba(212, 45, 212, 0.541);
+        }
+
+        .linkedin:hover {
+          color: #4c57a79b;
+        }
+        .instagram:hover {
+          color: #a04e4e8c;
+        }
+      }
+    }
+  }
+}

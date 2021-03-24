@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+.navbar {
+  width: 100%;
+  height: 100vh;
+
+  .navigation {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: $bodyColor;
+          font-size: 2rem;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .footer {
+    height: 5vh;
+    width: 100%;
+    border-top: 1px solid $border;
+    p {
+      text-align: center;
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.active .icon .fa {
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+
+.fa:hover {
+  color: $primaryColor;
+}

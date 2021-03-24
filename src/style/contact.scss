@@ -1,0 +1,115 @@
+@import './variables.scss';
+@import './animations.scss';
+
+.contact {
+  width: 70%;
+  margin: auto;
+  display: flex;
+
+  .lateral {
+    height: 20rem;
+    width: 1px;
+    background-color: white;
+    margin: 1.5rem 0 0 5rem;
+  }
+
+  .contact-message {
+    margin-top: 3rem;
+
+    p {
+      text-align: left;
+      margin: 0rem 0 1rem 6rem;
+      line-height: 2.1rem;
+      animation-name: moveInRight;
+      animation-duration: 1.5s;
+
+      .you {
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      .color {
+        color: $primaryColor;
+      }
+      .ou {
+        margin-left: 3rem;
+      }
+
+      .happy {
+        margin-left: 0.2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .contact-content {
+    width: 35%;
+    padding: 0 20px 40px 0;
+    background-color: $homeColor;
+    margin-top: -3rem;
+
+    .form-control {
+      position: relative;
+
+      input {
+        margin-top: 3rem;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid $border;
+        display: block;
+        padding: 15px 0;
+        font-size: 18px;
+        color: white;
+        outline: none;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.589);
+        }
+      }
+    }
+
+    textarea {
+      margin-top: 3rem;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $border;
+      display: block;
+      padding: 15px 0;
+      font-size: 18px;
+      color: white;
+      outline: none;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.589);
+        padding-top: 1.3rem;
+      }
+    }
+
+    .btn-form {
+      input {
+        margin-top: 4rem;
+        padding: 0.4rem;
+        background: none;
+        color: #ccd6f6;
+        width: 6rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        border-radius: 7rem 3rem;
+        outline: none;
+        transition: all 0.5s;
+        border: 1px solid #64ffdb5e;
+        color: inherit;
+
+        &:hover {
+          background: #64ffdb1a;
+          border: 1px solid #64ffda;
+          color: white;
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

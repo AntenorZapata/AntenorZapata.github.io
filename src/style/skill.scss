@@ -1,0 +1,42 @@
+@import './variables.scss';
+@import './animations.scss';
+
+.skill-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0rem auto;
+  justify-content: center;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon {
+      margin-right: 1.2rem;
+      font-size: 4.5rem;
+      transition: all 0.15s ease-in;
+    }
+
+    span {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      margin-top: -2rem;
+      visibility: hidden;
+    }
+
+    .icon:hover {
+      color: #a5f1e0ca;
+      transform: scale(1.2);
+      margin: 0 1.2rem;
+    }
+
+    &:hover span {
+      visibility: visible;
+    }
+  }
+}
