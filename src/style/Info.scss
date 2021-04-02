@@ -74,16 +74,16 @@
         bottom: -3px;
       }
 
-      @media screen and (min-width: 769px) and (max-width: 1024px) {
-        max-width: 60%;
-        left: 5px;
-        bottom: -3px;
-      }
+      // @media screen and (min-width: 769px) and (max-width: 1024px) {
+      //   max-width: 60%;
+      //   left: 5px;
+      //   bottom: -3px;
+      // }
     }
 
     &:hover::before {
-      top: 0;
-      left: 0;
+      // top: 0;
+      // left: 0;
       border: 1px solid #64ffda;
       transition: all 0.3s linear;
       border-radius: 2rem 4rem;
@@ -93,12 +93,22 @@
         top: -7.5rem;
         left: 2.5rem;
       }
+      @media screen and (min-width: 1025px) and (max-width: 1400px) {
+        border-radius: 0;
+        transition: none;
+        left: 15px;
+        bottom: -3px;
+      }
     }
 
     &:hover::after {
       border-radius: 2rem 4rem;
       transition: all 0.3s linear;
       @media screen and (max-width: 500px) {
+        border-radius: 0;
+        transition: none;
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1400px) {
         border-radius: 0;
         transition: none;
       }
