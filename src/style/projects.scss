@@ -2,6 +2,11 @@
 @import "./animations.scss";
 
 .projects-page {
+  @media screen and (max-width: 500px) {
+    width: 25rem;
+    height: 120%;
+    background-color: $homeColor;
+  }
   .projects {
     width: 70%;
     margin: auto;
@@ -12,6 +17,14 @@
       margin-top: -3rem;
       animation-name: opacity;
       animation-duration: 1.5s;
+      @media screen and (max-width: 500px) {
+        // background-color: red;
+        margin-top: -12rem;
+        margin-left: 0rem;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 15rem;
+      }
     }
 
     .single {
@@ -19,6 +32,9 @@
       border: 2px solid $border;
       margin-right: 4%;
       border-radius: 5px;
+      @media screen and (max-width: 500px) {
+        margin-bottom: 3rem;
+      }
 
       .single-data {
         width: 100%;
@@ -41,6 +57,12 @@
           transition: all 0.2s ease-in;
           animation-name: moveInRight;
           animation-duration: 1.5s;
+          @media screen and (max-width: 500px) {
+            top: 22rem;
+            left: -2.5rem;
+            width: 150%;
+            height: 150%;
+          }
 
           p {
             text-align: left;
@@ -48,6 +70,9 @@
             line-height: 2rem;
             font-weight: 500;
             color: $bodyColor;
+            @media screen and (max-width: 500px) {
+              font-size: 1.2rem;
+            }
           }
 
           .project-content {
@@ -55,6 +80,10 @@
             width: 100%;
             justify-content: space-between;
             margin-top: 3.5rem;
+            @media screen and (max-width: 500px) {
+              margin-top: 2rem;
+              // margin-bottom: 5rem;
+            }
 
             .techs {
               margin-left: 2rem;
@@ -99,6 +128,9 @@
         h4 {
           margin-top: 0rem;
           margin-bottom: 0.7rem;
+          @media screen and (max-width: 500px) {
+            font-size: 1rem;
+          }
 
           &:hover {
             color: $primaryColor;
@@ -118,6 +150,10 @@
 
   .btns {
     margin: -2.4rem 0 0 59rem;
+    @media screen and (max-width: 500px) {
+      margin-top: 46rem;
+      margin-left: 13rem;
+    }
 
     .btn {
       margin-right: 2rem;
@@ -144,25 +180,25 @@
   }
 }
 
-@media (max-width: 320px) {
-  .projects-page {
-    .title-project {
-      margin-left: -3rem;
-    }
-    .projects {
-      .single-project {
-        margin-left: -6rem;
-        margin-top: -6rem;
-        width: 10rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+// @media (max-width: 320px) {
+//   .projects-page {
+//     .title-project {
+//       margin-left: -3rem;
+//     }
+//     .projects {
+//       .single-project {
+//         margin-left: -6rem;
+//         margin-top: -6rem;
+//         width: 10rem;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: flex-start;
+//         align-items: flex-start;
 
-        .single {
-          margin-bottom: 3rem;
-        }
-      }
-    }
-  }
-}
+//         .single {
+//           margin-bottom: 3rem;
+//         }
+//       }
+//     }
+//   }
+// }

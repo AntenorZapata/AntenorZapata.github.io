@@ -10,6 +10,7 @@ import {
   DiNodejs,
   DiSass,
   DiMongodb,
+  DiJava,
 } from 'react-icons/di';
 
 function Skills() {
@@ -36,6 +37,10 @@ function Skills() {
       <div className="skill">
         <span className="hr-bar">Python</span>
         <DiPython className="icon" />
+      </div>
+      <div className="skill">
+        <span className="hr-bar">Java</span>
+        <DiJava className="icon" />
       </div>
       <div className="skill">
         <span className="hr-bar">NodeJS</span>

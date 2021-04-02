@@ -1,5 +1,5 @@
-@import './variables.scss';
-@import './animations.scss';
+@import "./variables.scss";
+@import "./animations.scss";
 
 .home-page {
   display: flex;
@@ -35,6 +35,9 @@
       padding: 1.5rem 0;
       animation-name: opacity;
       animation-duration: 3s;
+      @media screen and (max-width: 500px) {
+        margin-left: 1.5rem;
+      }
 
       .icon-box {
         margin-right: 1rem;

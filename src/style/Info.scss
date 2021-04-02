@@ -6,7 +6,7 @@
   width: 70%;
   margin: auto;
   @media screen and (max-width: 1024px) {
-    margin-left: 2.5rem;
+    margin-left: 3rem;
   }
 
   .img {
@@ -21,6 +21,7 @@
       border-radius: 2rem 4rem;
       overflow: hidden;
       @media screen and (max-width: 500px) {
+        margin-left: 2.5rem;
         width: 15rem;
         margin-top: -7rem;
       }
@@ -41,7 +42,7 @@
         width: 15rem;
         height: 10rem;
         top: -7.5rem;
-        left: 1rem;
+        left: 2.5rem;
       }
       // }
       // @media screen and (max-width: 1400px) {
@@ -64,7 +65,7 @@
         width: 15rem;
         height: 10rem;
         top: -7rem;
-        left: 0.4rem;
+        left: 2rem;
       }
       @media screen and (min-width: 1025px) and (max-width: 1400px) {
         max-width: 48%;
@@ -89,7 +90,7 @@
         border-radius: 0;
         transition: none;
         top: -7.5rem;
-        left: 1rem;
+        left: 2.5rem;
       }
     }
 
@@ -111,9 +112,16 @@
     h4 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      @media screen and (max-width: 500px) {
+        font-size: 1.7rem;
+        margin: 1rem 0 1rem 0;
+      }
     }
     span {
       color: #64ffda;
+      @media screen and (max-width: 500px) {
+        font-size: 1.7rem;
+      }
     }
 
     .btn {
@@ -130,7 +138,9 @@
         outline: none;
         cursor: pointer;
         @media screen and (max-width: 1024px) {
-          margin-bottom: 2rem;
+          margin-bottom: 0rem;
+          font-size: 0.6rem;
+          width: 8rem;
         }
       }
 
@@ -145,12 +155,16 @@
       line-height: 2rem;
       font-weight: 500;
       @media screen and (max-width: 500px) {
-        font-size: 1rem;
-        text-align: justify;
+        font-size: 1.2rem;
+        // text-align: justify;
       }
 
       span {
         color: #64ffda;
+        @media screen and (max-width: 500px) {
+          font-size: 1.2rem;
+          // text-align: justify;
+        }
       }
     }
   }

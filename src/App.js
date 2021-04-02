@@ -5,7 +5,7 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import { Switch, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [showSide, setShowSide] = useState(false);
@@ -13,6 +13,14 @@ function App() {
   const showNav = () => {
     setShowSide(!showSide);
   };
+
+  const handleClick = (e) => {
+    if (e.target.className !== "nav-btn") return setShowSide(false);
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClick);
+  });
 
   return (
     <div className="App">
