@@ -5,16 +5,26 @@
   width: 70%;
   margin: auto;
   display: flex;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    margin-top: -6rem;
+  }
 
   .lateral {
     height: 20rem;
     width: 1px;
     background-color: white;
     margin: 1.5rem 0 0 5rem;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
   }
 
   .contact-message {
     margin-top: 3rem;
+    @media screen and (max-width: 500px) {
+      margin: -2rem 0 2rem 0;
+    }
 
     p {
       text-align: left;
@@ -22,14 +32,24 @@
       line-height: 2.1rem;
       animation-name: moveInRight;
       animation-duration: 1.5s;
+      @media screen and (max-width: 500px) {
+        font-size: 1.2rem;
+        display: inline;
+      }
 
       .you {
         display: block;
         margin-bottom: 1rem;
+        @media screen and (max-width: 500px) {
+          font-size: 1.5rem;
+        }
       }
 
       .color {
         color: $primaryColor;
+        @media screen and (max-width: 500px) {
+          font-size: 1.2rem;
+        }
       }
       .ou {
         margin-left: 3rem;
@@ -62,6 +82,9 @@
         font-size: 18px;
         color: white;
         outline: none;
+        @media screen and (max-width: 500px) {
+          width: 18rem;
+        }
 
         &::placeholder {
           color: rgba(255, 255, 255, 0.589);
@@ -80,6 +103,9 @@
       font-size: 18px;
       color: white;
       outline: none;
+      @media screen and (max-width: 500px) {
+        width: 18rem;
+      }
 
       &::placeholder {
         color: rgba(255, 255, 255, 0.589);

@@ -59,7 +59,7 @@ function Contact() {
             <span class="ou">ou</span>
             <br />- Trocar uma <span className="color">ideia</span>,
             <br />
-            me manda uma mensagem. Vai ser massa te conhecer!{' '}
+            me manda uma mensagem.<br/> Vai ser massa te conhecer!{' '}
             <HiOutlineEmojiHappy className="happy" />
           </p>
         </div>

@@ -21,8 +21,7 @@ const projetos = [
     techs: `HTML / Sass / JavaScript`,
     linkGit: 'https://github.com/AntenorZapata/minimaList',
     linkPage: 'https://silly-wozniak-80a536.netlify.app',
-  },
-  
+  }, 
 ];
 
 export default projetos;
