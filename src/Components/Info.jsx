@@ -15,9 +15,10 @@ function Info() {
         <div className="about-details">
           <div className="story-datails">
             <p className="description">
-              Um músico, que se descobriu jornalista e atualmente estuda para se
-              tornar programador. Após anos atuando em outras áreas, percebi que
-              é com Desenvolvimento de Software que consigo unir o "quem eu sou"
+            Com uma trajetória como músico e jornalista, tenho experiência em comunicação empresarial, produção de texto e vídeo
+            e atendimento ao cliente. Sempre apaixonado por tecnologia, resolvi, após anos atuando em outras áreas,
+            apostar no sonho antigo de me tornar programador. Já num primeiro contato percebi que é
+              com Desenvolvimento de Software que consigo unir o "quem eu sou"
               ao "o que eu gosto": <span> dar vazão à minha curiosidade</span>;{' '}
               <span>
                 detectar problemas, encontrar soluções e aprender com elas
