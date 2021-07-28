@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../Components/Title';
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
-import { HiOutlineEmojiHappy } from 'react-icons/hi';
+// import { HiOutlineEmojiHappy } from 'react-icons/hi';
 init('user_XUCQW0dqHQK2Uh4J45aox');
 
 function Contact() {
