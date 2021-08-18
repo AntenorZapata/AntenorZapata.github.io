@@ -9,10 +9,10 @@ function About() {
       <div className="about-page infos">
         <Title text={'SOBRE MIM'} shadow={'SOBRE MIM'} />
         <Info />
-        <Title
-          text={'O QUE ESTOU APRENDENDO'}
-          shadow={'O QUE ESTOU APRENDENDO'}
-        />
+        {/* <Title
+          text={'ALGUMAS FERRAMENTAS'}
+          shadow={'ALGUMAS FERRAMENTAS'}
+        /> */}
         <Skills />
       </div>
     </div>

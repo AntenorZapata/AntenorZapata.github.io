@@ -6,7 +6,7 @@ function Info() {
   return (
     <div className='image-section'>
       <div className='img'>
-        <img src={image} alt='' />
+        {/* <img src={image} alt='' /> */}
       </div>
       <div className='about-info'>
         <h4>
@@ -16,20 +16,23 @@ function Info() {
         <div className='about-details'>
           <div className='story-datails'>
             <p className='description'>
-              Com uma trajetória na música e no jornalismo, tenho experiência em
-              comunicação empresarial, produção de texto e vídeo e atendimento
-              ao cliente. Sempre apaixonado por tecnologia, resolvi, após anos
-              atuando em outras áreas, apostar no sonho antigo de me tornar
-              programador. Já num primeiro contato percebi que é com
+              Sempre apaixonado por tecnologia, descobri que é com
               Desenvolvimento de Software que consigo unir o "quem eu sou" ao "o
               que eu gosto": <span> dar vazão à minha curiosidade</span>;{' '}
               <span>
                 detectar problemas, encontrar soluções e aprender com elas
               </span>
               ;<span> ser colaborativo no ambiente de trabalho</span>;
-              <span> construir coisas que afetam pessoas</span>. Nesta página
-              você poderá encontrar projetos, pessoais e profissionaiDownload
-              Pdfs, que venho realizando ao longo dessa jornada. Stay tuned! : ]
+              <span> construir coisas que afetam pessoas</span>.
+              Atualmente, curso o segundo semestre de <span> Ciência da Computação</span> e estudo Desenvolvimento Web Full Stack na <span>Trybe</span> , escola com metodologia ativa, focada na elaboração de projetos e trabalho em equipe.
+              <br/>
+               Experiência com:
+              • JavaScript (React/Redux, Node.js)
+              • Banco de dados (MySQL, MongoDB)
+              • Controle de Versão (Git, Github)
+              • Metodologias Ágeis (Scrum, Kanban)
+              • Testes (TDD)
+              • Outras tecnologias: Python, Java, HTML 5, CSS e SASS.
             </p>
           </div>
         </div>
